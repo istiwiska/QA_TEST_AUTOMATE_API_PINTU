@@ -1,0 +1,626 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Get request to fetch all users",
+        "description": "",
+        "id": "i-am-testing-get-request-for-get-rest-api;get-request-to-fetch-all-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1669925000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2471852700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit the api with get request and end point as \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 48
+                }
+              ],
+              "location": "GetRequestStepDefs.i_hit_the_api_with_get_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1491491300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API should return all the users",
+            "match": {
+              "location": "GetRequestStepDefs.api_should_return_all_the_users()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Get request to fetch all users with id \u003d 1 to check api resource filter",
+        "description": "",
+        "id": "i-am-testing-get-request-for-get-rest-api;get-request-to-fetch-all-users-with-id-\u003d-1-to-check-api-resource-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2954000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 428132500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I hit the api with get request and end point as \"/posts?id\u003d1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts?id\u003d1\"",
+                  "offset": 48
+                }
+              ],
+              "location": "GetRequestStepDefs.i_hit_the_api_with_get_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76258400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "API should return all the id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 29
+                }
+              ],
+              "location": "GetRequestStepDefs.api_should_return_all_the_id(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "API should get response status code as 200 for incorrect id",
+        "description": "",
+        "id": "i-am-testing-get-request-for-get-rest-api;api-should-get-response-status-code-as-200-for-incorrect-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2323200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 370436900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I hit the api with get request and end point as \"/posts?id\u003d190\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts?id\u003d190\"",
+                  "offset": 48
+                }
+              ],
+              "location": "GetRequestStepDefs.i_hit_the_api_with_get_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38329500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "API should return user not found response for id 190",
+            "match": {
+              "arguments": [
+                {
+                  "val": "190",
+                  "offset": 49
+                }
+              ],
+              "location": "GetRequestStepDefs.api_should_return_user_not_found_response(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Get request to fetch all users with user_id 10 and id 99 to check api resource filter",
+        "description": "",
+        "id": "i-am-testing-get-request-for-get-rest-api;get-request-to-fetch-all-users-with-user-id-10-and-id-99-to-check-api-resource-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2081100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 361551900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I hit the api with get request and end point as \"/posts?userId\u003d10\u0026id\u003d99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts?userId\u003d10\u0026id\u003d99\"",
+                  "offset": 48
+                }
+              ],
+              "location": "GetRequestStepDefs.i_hit_the_api_with_get_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86035400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "API should return all the users with user_id 10 and id 99",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 45
+                },
+                {
+                  "val": "99",
+                  "offset": 55
+                }
+              ],
+              "location": "GetRequestStepDefs.api_should_return_all_the_users_with_user_id_and_id(int,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      }
+    ],
+    "name": "I am testing get request for Get Rest API",
+    "description": "",
+    "id": "i-am-testing-get-request-for-get-rest-api",
+    "keyword": "Feature",
+    "uri": "features/api/GetRequests.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@get",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Post request to create a post in the API",
+        "description": "",
+        "id": "i-am-testing-post-request-for-post-rest-api;post-request-to-create-a-post-in-the-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3625300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10975600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I set header and body to create new user",
+            "match": {
+              "location": "PostRequestStepDefs.i_set_header_and_body_to_create_new_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 803033200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I hit the api with post request and end point as \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 49
+                }
+              ],
+              "location": "PostRequestStepDefs.i_hit_the_api_with_post_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88116200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "API created a new User in the system",
+            "match": {
+              "location": "PostRequestStepDefs.api_created_a_new_User_in_the_system()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Post request to validate response when no body is sent",
+        "description": "",
+        "id": "i-am-testing-post-request-for-post-rest-api;post-request-to-validate-response-when-no-body-is-sent",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2447400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2259500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I set header and but with out any body",
+            "match": {
+              "location": "PostRequestStepDefs.i_set_header_and_but_with_out_any_body()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 822638600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I hit the api with post request and end point as \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 49
+                }
+              ],
+              "location": "PostRequestStepDefs.i_hit_the_api_with_post_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3716300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "API returned the successful code when request to validate response when no body is sent as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 91
+                }
+              ],
+              "location": "PostRequestStepDefs.api_returned_the_successful_code_as1(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Post request to validate response when empty field values are sent in body",
+        "description": "",
+        "id": "i-am-testing-post-request-for-post-rest-api;post-request-to-validate-response-when-empty-field-values-are-sent-in-body",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1982100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1947200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I set header and body with fields but no values",
+            "match": {
+              "location": "PostRequestStepDefs.i_set_header_and_body_with_fields_but_no_values()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 740816800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I hit the api with post request and end point as \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 49
+                }
+              ],
+              "location": "PostRequestStepDefs.i_hit_the_api_with_post_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1176800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "API returned the successful code when request to validate response when empty field values are sent in body as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 111
+                }
+              ],
+              "location": "PostRequestStepDefs.api_returned_the_successful_code_as2(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Post request to validate response when incorrect data types for all fields are sent",
+        "description": "",
+        "id": "i-am-testing-post-request-for-post-rest-api;post-request-to-validate-response-when-incorrect-data-types-for-all-fields-are-sent",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2046800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Go rest API is up and running",
+            "match": {
+              "location": "GetRequestStepDefs.go_rest_API_is_up_and_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5384800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I set header and body with incorrect data types are sent for every field",
+            "match": {
+              "location": "PostRequestStepDefs.i_set_header_and_body_with_incorrect_data_types_are_sent_for_every_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 855722500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I hit the api with post request and end point as \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 49
+                }
+              ],
+              "location": "PostRequestStepDefs.i_hit_the_api_with_post_request_and_end_point_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2326800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "API returned the successful code when request to validate response when incorrect data types for all fields are sent as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 120
+                }
+              ],
+              "location": "PostRequestStepDefs.api_returned_the_successful_code_as3(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      }
+    ],
+    "name": "I am testing post request for Post Rest API",
+    "description": "",
+    "id": "i-am-testing-post-request-for-post-rest-api",
+    "keyword": "Feature",
+    "uri": "features/api/PostRequests.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@post",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  }
+]
